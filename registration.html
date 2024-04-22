@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Metrimony Registration</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm00NzYtcGYtczEyNy1kLTAwMS5qcGc.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Poppins', sans-serif;
+            color: #333; /* Change text color to improve readability */
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+ 	.form-container form {
+            max-width: 600px; /* Increased width for better alignment */
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .form-container form label {
+            display: inline-block;
+            width: 45%; /* Adjust label width as needed */
+            margin-bottom: 5px;
+        }
+
+        .form-container form input[type="text"],
+        .form-container form input[type="date"],
+        .form-container form input[type="tel"],
+        .form-container form textarea {
+            width: 45%; /* Adjust input width as needed */
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            display: inline-block; /* Display inputs inline */
+            vertical-align: middle; /* Align inputs vertically */
+        }
+
+        .form-container form textarea {
+            height: 100px; /* Increase textarea height for better visibility */
+        }
+
+        .form-container form input[type="file"] {
+            width: 45%; /* Adjust input width as needed */
+            margin-top: 10px;
+            display: inline-block; /* Display input inline */
+            vertical-align: middle; /* Align input vertically */
+        }
+
+        .form-container form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%; /* Make submit button full width */
+            display: block; /* Display submit button as block element */
+            margin-top: 10px; /* Add some spacing above submit button */
+        }
+
+        .form-container form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .submit{
+    display: inline-block; /* Change display property */
+    background-color: rgb(16, 192, 40);
+    color: #fff;
+    border-radius: 4px; 
+    height: 26px;
+    width: 75px;
+    border: none; 
+    text-decoration: none;
+    align-items: center;
+    min-width: 2vh;
+}
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><h1 align="center" style="color: green;">enter personal Details</h1>
+    <div class="form-container">
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+            
+            <label for="education">Educational Details:</label>
+            <textarea id="education" name="education" rows="4" cols="50"></textarea>
+            
+            <label for="caste">Caste:</label>
+            <input type="text" id="caste" name="caste">
+            
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies">
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height" placeholder="Format: 5'10" required>
+            
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" name="weight" required>
+            
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image">
+            <div>
+                <a href="registration_suc.html" class="submit">submit</a>
+              </div>
+            </form>
+    </div>
+</body>
+</html>
